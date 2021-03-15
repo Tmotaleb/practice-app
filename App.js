@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import Pract from './components/pact.js';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <Text>Hello World!</Text>
@@ -19,3 +20,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
