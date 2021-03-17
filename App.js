@@ -1,24 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
-import Pract from './components/pact.js';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
+import WelcomeScreen from './app/screens/WelcomeScreen';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  Button,
+  View,
+  SafeAreaView,
+  ImageBackground
+} from 'react-native';
 
 const App = () => {
+
+ const { landscape } = useDeviceOrientation()
+
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <WelcomeScreen />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+// });
 
 export default App;
