@@ -8,13 +8,14 @@ import {
   Button,
   View,
   SafeAreaView,
-  ImageBackground
+  ImageBackground,
+  Image
 } from 'react-native';
 
 
 const ViewImageScreen = () => {
   return (
-    <Text>Hello all!</Text>
+    <Image></Image>
   )
 }
 
