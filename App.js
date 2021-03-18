@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import WelcomeScreen from './app/screens/WelcomeScreen';
+import ViewImageScreen from './app/screens/ViewImageScreen';
 import {
   StyleSheet,
   Text,
@@ -17,7 +18,7 @@ const App = () => {
  const { landscape } = useDeviceOrientation()
 
   return (
-      <WelcomeScreen />
+    <ViewImageScreen/>
   );
 }
 
