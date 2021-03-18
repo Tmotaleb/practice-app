@@ -18,9 +18,12 @@ const App = () => {
  const { landscape } = useDeviceOrientation()
 
   return (
-    <ViewImageScreen/>
+    // <ViewImageScreen/>
+    <WelcomeScreen/>
   );
 }
+
+
 
 // const styles = StyleSheet.create({
 //   container: {
