@@ -7,13 +7,7 @@ const wsStyles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems:'center'
   },
-  loginButton: {
-    width: '100%',
-    height: 40,
-    backgroundColor: '#fc5c65',
-    borderRadius: 20,
-    margin: 10,
-  },
+
   registerButton: {
     width: '100%',
     height: 70,
@@ -55,17 +49,50 @@ const vsStyles = StyleSheet.create({
     width: '100%',
     height: '100%',
   }
+});
+
+const buttonContainer = StyleSheet.create({
+  container: {
+    padding: 20,
+    width: '100%',
+    marginVertical:10
+  },
+  // loginBtn: {
+  //   width: '100%',
+  //   height: 45,
+  //   backgroundColor:'pink',
+  //   backgroundColor: '#fc5c65',
+  //   borderRadius: 10,
+  //   justifyContent: 'center',
+  //   padding: 10,
+  //   alignItems: 'center',
+  // },
+  // registerBtn: {
+  //   width: '100%',
+  //   height: 45,
+  //   backgroundColor: '#4ECDC4',
+  //   borderRadius: 25,
+  //   justifyContent: 'center',
+  //   padding: 10,
+  //   alignItems: 'center',
+  // },
+  // text: {
+  //   color: 'white',
+  //   fontSize: 18,
+  //   textTransform: 'uppercase',
+  //   fontWeight: 'bold'
+  // }
 })
 
-const appBtn = StyleSheet.create({
-  button: {
-    width: '100%',
-    height: 40,
+
+const appButton = StyleSheet.create({
+  btn: {
     backgroundColor: '#fc5c65',
     borderRadius: 25,
     justifyContent: 'center',
     padding: 15,
-    alignItems: 'center'
+    alignItems: 'center',
+    width: '100%'
   },
   text: {
     color: 'white',
@@ -75,4 +102,4 @@ const appBtn = StyleSheet.create({
   }
 })
 
-export {wsStyles, vsStyles, appBtn};
+export {wsStyles, vsStyles, buttonContainer, appButton};

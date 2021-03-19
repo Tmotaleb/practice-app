@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
-import {wsStyles} from '../components/styles';
+import {wsStyles, buttonContainer} from '../components/styles';
 import AppButton from '../components/AppButton';
 import {
   StyleSheet,
@@ -10,7 +10,8 @@ import {
   View,
   SafeAreaView,
   ImageBackground,
-  Image
+  Image,
+  TouchableOpacity
 } from 'react-native';
 
 
@@ -27,15 +28,24 @@ const WelcomeScreen = () => {
     />
     <Text>Sell What You Don't Need</Text>
   </View>
-    {/* <View style={wsStyles.loginButton}>
-      <Button
-        title='LOGIN'
-        color='white'
-        onPress={()=> console.log('button tapped')}
+
+    <View style={buttonContainer.container}>
+
+      <AppButton
+        title='login'
+        onPress={()=> console.log('login pressed')}
       />
-    </View> */}
-    <AppButton title='login' onPress={()=> console.log('my new btn!')}/>
-    <View style={wsStyles.registerButton}></View>
+
+      <AppButton
+        title='register'
+        onPress={()=> console.log('register btn pressed')}
+        color='secondary'
+      />
+
+    </View>
+
+
+
 
   </ImageBackground>
   )
