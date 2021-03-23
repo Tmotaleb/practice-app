@@ -21,6 +21,11 @@ const wsStyles = StyleSheet.create({
   logo:{
     width: 100,
     height: 100,
+  },
+  tagline: {
+    fontSize:25,
+    fontWeight:'600',
+    paddingVertical: 20,
   }
 })
 
@@ -55,7 +60,6 @@ const buttonContainer = StyleSheet.create({
   container: {
     padding: 20,
     width: '100%',
-    marginVertical:10
   },
   // loginBtn: {
   //   width: '100%',
@@ -92,7 +96,8 @@ const appButton = StyleSheet.create({
     justifyContent: 'center',
     padding: 15,
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
+    marginVertical: 10
   },
   text: {
     color: 'white',
@@ -102,4 +107,29 @@ const appButton = StyleSheet.create({
   }
 })
 
-export {wsStyles, vsStyles, buttonContainer, appButton};
+
+
+
+const waterScn = StyleSheet.create({
+  container: {
+    backgroundColor: 'lightgrey',
+    flex:1,
+    justifyContent: 'flex-end',
+    alignItems: 'center'
+  },
+  btn: {
+    borderWidth:1,
+    borderColor:'rgba(0,0,0,0.2)',
+    alignItems:'center',
+    justifyContent:'center',
+    width:100,
+    height:100,
+    backgroundColor:'#fff',
+    borderRadius:50,
+  },
+  btnBox: {
+
+  }
+})
+
+export {wsStyles, vsStyles, buttonContainer, appButton, waterScn};

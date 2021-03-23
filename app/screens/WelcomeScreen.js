@@ -20,13 +20,14 @@ const WelcomeScreen = () => {
   <ImageBackground
     source={require('../assets/background.jpg')}
     style={wsStyles.background}
+    blurRadius={10}
   >
   <View style={wsStyles.logoContainer}>
     <Image
       source={require('../assets/logo-red.png')}
       style={wsStyles.logo}
     />
-    <Text>Sell What You Don't Need</Text>
+    <Text style={wsStyles.tagline}>Sell What You Don't Need</Text>
   </View>
 
     <View style={buttonContainer.container}>

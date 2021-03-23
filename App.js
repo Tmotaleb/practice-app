@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
+import WaterScreen from './app/screens/WaterScreen';
 import {
   StyleSheet,
   Text,
@@ -18,8 +19,7 @@ const App = () => {
  const { landscape } = useDeviceOrientation()
 
   return (
-    // <ViewImageScreen/>
-    <WelcomeScreen/>
+    <WaterScreen/>
   );
 }
 
